@@ -18,9 +18,8 @@ BASE_URL = f"https://{host}/api"
 
 requete = requests.post(f'https://{host}/api/session', auth=(user, password), verify=False).json()
 
-session_id = requete
 headers = {
-    "vmware-api-session-id": session_id,
+    "vmware-api-session-id": requete,
     "Content-Type": "application/json"
 }
 
