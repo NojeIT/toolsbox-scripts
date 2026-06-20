@@ -5,23 +5,20 @@ Ce dépôt regroupe un ensemble de mini-scripts et d'outils d'automatisation dé
 L'objectif de ce dépôt est de centraliser des scripts utiles au quotidien pour un administrateur, allant de la gestion des connexions distantes à l'interaction avancée avec des API d'infrastructure virtuelle (VMware).
 
 ---
+## 👤 À propos de moi
 
-## 📂 Contenu du Dépôt
+* **Formation précédente :** BTS CIEL IR (Cybersécurité, Informatique et réseaux, Électronique)
+* **Formation Actuelle :** 3ème année de Bachelor Administrateur Systèmes et Réseaux (ASR) — CESI
+* **Centres d'intérêt :** Automatisation (Ansible, Python, Bash), Cloud & Virtualisation, Architecture des réseaux et systèmes d'informations.
 
-### 1. 🐍 Gestion de l'Infrastructure VMware via API (`interaction_api_vmware.py`)
-Un script en Python qui interagit directement avec l'API REST de VMware vCenter. 
-* **Fonctionnalités :** * Connexion sécurisée et gestion de session via les variables d'environnement (`.env`).
-  * Récupération et affichage structuré de la liste des machines virtuelles à l'aide de la librairie **Pandas**.
-  * Module de suppression sécurisée d'une VM avec double confirmation de l'utilisateur.
-  * Retour visuel dynamique dans le terminal grâce à un indicateur de chargement (**Halo/Spinner**).
+---
 
-### 2. 🐚 Client de Connexion RDP Automatisé (`clientRDP.sh`)
-Un script Bash léger conçu pour simplifier et accélérer l'ouverture de sessions de bureau à distance sous Linux.
-* **Fonctionnalités :**
-  * Demande interactive de l'adresse du serveur et de l'identifiant.
-  * Vérification de la présence des variables pour éviter les erreurs de saisie.
-  * Initialisation automatique de la session graphique à l'aide de l'outil `xfreerdp`.
+## 🚀 Utilisation générale
 
+Ce dépôt est une bibliothèque personnelle de scripts. Pour utiliser l'un des outils présents :
+1. Clonez le dépôt sur votre machine locale.
+2. Assurez-vous d'avoir les prérequis nécessaires (Python, Bash, etc.) selon le script choisi.
+3. Configurez les éventuels fichiers d'environnement (`.env`) nécessaires à l'exécution.
 ---
 
 ## 🚀 Installation & Prérequis
