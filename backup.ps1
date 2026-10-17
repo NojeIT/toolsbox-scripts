@@ -20,7 +20,7 @@ if (-not (Test-Path $cheminSauvegarde)) {
 $nomFichierZip = "Sauvegarde_${nom}_${prenom}_${date}.zip"
 $cheminZip = Join-Path -Path $cheminSauvegarde -ChildPath $nomFichierZip
 
-# Créer le fichier ZIP avec tous les fichiers du dossier personnel
+# Créer le fichier ZIP ave tous les fichiers du dossier personnel
 Compress-Archive -Path "$cheminDossier\*" -DestinationPath $cheminZip
 
 # Informations de connexion SFTP
